@@ -25,8 +25,20 @@
 #     return "".join(numb_Binary[::-1])
 
 # print(func2())
+# def func2_1():
+#     numb_Binary = 1001011
+#     numbers_list = []
 
+#     for i in reversed(str(numb_Binary)):
 
+#         for x in range(len(str(numb_Binary))):
+
+#             i = int(i) ** x
+#         numbers_list.append(i)
+
+#     return(numbers_list)
+# print(func2_1())
+# :( ar gamovida
 
 
 
