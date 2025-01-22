@@ -1,12 +1,29 @@
 # დავალება ნომერი 1
 # def func1(a ,b ,c):
-#     if b > a:
-#         a, b = b, a
-#         return (a - b - 2) // c
+#     if a % c != 0 or (a % c == 0 and b% c == 0):
+#         return ((b + a % c) - a) // c
 #     else:
-#         return(a - b - 2) // c
+#         return((b + a % c) - a) // c + 1
 
 # print(func1(20, 40, 2))
+
+
+# def func1_1(a, b, c):
+#     count = 0
+#     if a > b:
+#         while b < a:
+#             if b % c == 0 :
+#                 count += 1
+#             b += 1
+#     else:
+#         while a < b:
+#             if a % c == 0 :
+#                 count += 1
+#             a += 1
+#     return count
+
+# print(func1_1(60, 40, 11))
+
 
 
 #დავალება ნომერი 2
@@ -24,26 +41,20 @@
 
 #     return "".join(numb_Binary[::-1])
 
-# print(func2())
-# def func2_1():
-#     numb_Binary = 1001011
-#     numbers_list = []
 
-#     for i in reversed(str(numb_Binary)):
+# def func2_1(binary):
 
-#         for x in range(len(str(numb_Binary))):
+#     decimal = 0
+#     position = 0
 
-#             i = int(i) ** x
-#         numbers_list.append(i)
+#     for bit in binary[::-1]:
 
-#     return(numbers_list)
-# print(func2_1())
-# :( ar gamovida
+#         decimal += bit * (2 ** position)
+#         position += 1 
 
+#     return decimal
 
-
-
-
+# print(func2_1([1, 0, 1, 0,]))
 
 
 #დავალება ნომერი 3
